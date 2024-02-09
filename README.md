@@ -19,6 +19,25 @@ La implementación de microservicios, en mi experiencia, facilita significativam
 ## Influencias y Mentores
 
 Por último, mi enfoque y comprensión del desarrollo de software han sido enriquecidos significativamente por mi mentor, **Phil Sturgeon**, y su obra *"APIs You Won't Hate"*. Este libro se ha convertido en una herramienta invaluable para mí y, creo, para cualquier desarrollador que se adentra en el complejo mundo de la ingeniería del software. Su perspectiva y consejos han sido fundamentales en mi desarrollo profesional y en la manera en que abordo los desafíos del desarrollo de backend.
+# Guía de Instalación del Proyecto Django
+
+Esta guía te llevará a través de los pasos necesarios para configurar y ejecutar tu proyecto Django en un entorno de desarrollo local.
+
+## Requisitos Previos
+
+Asegúrate de tener instalado Python y pip en tu sistema. Django es un framework web para Python, por lo tanto, necesitas tener Python instalado para trabajar con Django.
+
+Puedes verificar si Python y pip están instalados usando los siguientes comandos:
+
+```bash
+python --version
+pip --version
+python -m venv venv
+venv\Scripts\activate
+
+pip install django
+python manage.py runserver
+
 
 ## URLs y Endpoints de la API
 
