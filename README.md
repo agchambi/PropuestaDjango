@@ -1,4 +1,4 @@
-# Reflexiones sobre el Rediseño de la Base de Datos y el Desarrollo Backend
+# Backend DJANGO Antony Chambi 71524895
 
 ## Rediseño de la Base de Datos
 
