@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'backend'
 ]
 
 MIDDLEWARE = [
@@ -75,10 +77,15 @@ WSGI_APPLICATION = 'Examen_php_71524895.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Django',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',   # O la dirección IP del servidor de tu base de datos
+        'PORT': '3306',        # El puerto por defecto para MySQL
     }
 }
+
 
 
 # Password validation

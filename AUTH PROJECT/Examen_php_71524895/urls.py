@@ -14,9 +14,28 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
+
 from django.urls import path
+from backend.views import (AutorList, AutorDetail, LibroList, LibroDetail, ClienteList, ClienteDetail, PrestamoList, PrestamoDetail, AutorLibroList, AutorLibroDetail)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # URLs para Autor
+    path('autores/', AutorList.as_view(), name='autor-list'),
+    path('autores/<int:pk>/', AutorDetail.as_view(), name='autor-detail'),
+    
+    # URLs para Libro
+    path('libros/', LibroList.as_view(), name='libro-list'),
+    path('libros/<int:pk>/', LibroDetail.as_view(), name='libro-detail'),
+    
+    # URLs para Cliente
+    path('clientes/', ClienteList.as_view(), name='cliente-list'),
+    path('clientes/<int:pk>/', ClienteDetail.as_view(), name='cliente-detail'),
+    
+    # URLs para Prestamo
+    path('prestamos/', PrestamoList.as_view(), name='prestamo-list'),
+    path('prestamos/<int:pk>/', PrestamoDetail.as_view(), name='prestamo-detail'),
+    
+    # URLs para AutorLibro
+    path('autorlibro/', AutorLibroList.as_view(), name='autorlibro-list'),
+    path('autorlibro/<int:pk>/', AutorLibroDetail.as_view(), name='autorlibro-detail'),
 ]
